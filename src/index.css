@@ -1,1 +1,89 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+
+    /* add custom fonts */
+    @font-face {
+        font-family: "Dana Regular";
+        src: local("Dana"), url("./public/fonts/Dana/DanaFaNum-Regular.woff2"), format('woff2');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Dana Medium";
+        src: local("Dana"), url("./public/fonts/Dana/DanaFaNum-Medium.woff2"), format('woff2');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Dana DemiBold";
+        src: local("Dana"), url("./public/fonts/Dana/DanaFaNum-DemiBold.woff2"), format('woff2');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Morabba Bold";
+        src: local("Dana"), url("./public/fonts/Morabba/Morabba-Bold.woff2"), format('woff2');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Morabba Light";
+        src: local("Dana"), url("./public/fonts/Morabba/Morabba-Light.woff2"), format('woff2');
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Morabba Medium";
+        src: local("Dana"), url("./public/fonts/Morabba/Morabba-Medium.woff2"), format('woff2');
+        font-display: swap;
+    }
+}
+
+@theme {
+    /* fonts */
+    --font-Dana-Regular: "Dana Regular";
+    --font-Dana-Medium: "Dana Medium";
+    --font-Dana-DemiBold: "Dana DemiBold";
+    --font-Morabba-Bold: "Morabba Bold";
+    --font-Morabba-Light: "Morabba Light";
+    --font-Morabba-Medium: "Morabba Medium";
+
+    /* colors */
+    --color-primary: rgb(255, 196, 81);
+    --color-typing: rgb(68, 68, 68);
+
+    /* breakpoints */
+    --breakpoint-xxs: 24.375rem;
+    --breakpoint-xs: 30rem;
+}
+
+@utility container {
+    @apply mx-auto px-4 lg:px-2.5
+}
+
+@layer utilities {
+    .bg-main {
+        background-image: url("");
+    }
+
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-between {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@layer components {
+    .drop-down-list {
+        @apply w-50 bg-white absolute z-100 shadow-sm pt-2.5 invisible opacity-0 group-hover:visible group-hover:opacity-100 rounded-xs transition-all duration-500 delay-100 *:hover:bg-primary *:transition-colors *:duration-600 *:p-2.5 last:pb-2.5 *:block *:text-black
+    }
+}
