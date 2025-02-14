@@ -6,7 +6,7 @@ export default function MobileMenu() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
             </div>
-            <ul className="bg-white py-2.5 px-5 font-bold space-y-5 h-9/10">
+            <ul className="bg-white py-2.5 px-5 font-bold space-y-5 h-9/10 rounded-md">
                 <li><a href="#">خانه</a></li>
                 <li><a href="#">درباره ی ما</a></li>
                 <li><a href="#">خدمات</a></li>
@@ -20,7 +20,7 @@ export default function MobileMenu() {
                         </svg>
                     </div>
 
-                    <ul id="mobile-submenu-1" className="sub-menu sub-menu--open bg-white shadow-md mt-2.5 py-2.5 px-5 font-bold space-y-5 h-9/10">
+                    <ul id="mobile-submenu-1" className="sub-menu sub-menu--open bg-white shadow-md mt-2.5 py-2.5 px-5 font-bold space-y-5 h-9/10 rounded-md">
                         <li><a href="#">لیست کشویی 1</a></li>
                         <li>
                             <div onClick={openSubMenu2} className="flex-between">
@@ -30,7 +30,7 @@ export default function MobileMenu() {
                                 </svg>
                             </div>
                         </li>
-                        <ul id="mobile-submenu-2" className="sub-menu sub-menu--open bg-white shadow-md mt-2.5 py-2.5 px-5 font-bold space-y-5 h-9/10">
+                        <ul id="mobile-submenu-2" className="sub-menu sub-menu--open bg-white shadow-md mt-2.5 py-2.5 px-5 font-bold space-y-5 h-9/10 rounded-md">
                             <li><a href="#">لیست کشویی عمیق 1</a></li>
                             <li><a href="#">لیست کشویی عیمق 2</a></li>
                             <li><a href="#">لیست کشویی عمیق 3</a></li>

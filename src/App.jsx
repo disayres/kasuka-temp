@@ -29,6 +29,7 @@ const resetMobileStructure = () => {
     })
   }
 }
+
 window.addEventListener('resize', resetMobileStructure)
 
 export default App
