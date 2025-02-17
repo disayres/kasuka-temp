@@ -54,6 +54,7 @@
     /* colors */
     --color-primary: rgb(255, 196, 81);
     --color-primary-bold: rgb(255, 187, 56);
+    --color-gray: rgb(132, 132, 132);
     --color-typing: rgb(68, 68, 68);
 
     /* breakpoints */
@@ -69,7 +70,7 @@
 
     /* add some custom utility classes to tailwind */
     .main-hero {
-        background-image: url("public/images/hero-bg.jpg");
+        background-image: url("/images/hero-bg.jpg");
     }
 
     .main-hero::before {
